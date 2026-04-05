@@ -990,7 +990,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web\napp"
+                "text": "Web app\nServer"
               },
               "body": {
                 "stroke": "red",
@@ -1086,7 +1086,7 @@
             "id": "b6faba2c-43ec-4604-94e0-8aba0e2897e7",
             "data": {
               "type": "tm.Process",
-              "name": "Web\napp",
+              "name": "Web app\nServer",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1176,13 +1176,6 @@
                   "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1492,22 +1485,7 @@
                 "x": 500,
                 "y": 410
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           }
         ]
       },
