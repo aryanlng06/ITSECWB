@@ -846,13 +846,6 @@
                   "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -869,11 +862,13 @@
                 "text": "MongoDB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -970,13 +965,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "12202926-7cac-4949-9d3f-1e2d0c30a24b",
+                  "title": "T-015 MongoDB Database  DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the \ndatabase, making it unresponsive.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1431,6 +1447,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 27
+    "threatTop": 28
   }
 }
