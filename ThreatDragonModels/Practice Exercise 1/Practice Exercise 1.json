@@ -708,9 +708,36 @@
           }
         ],
         "description": "Present Data Flow"
+      },
+      {
+        "id": 2,
+        "title": "Barista Updates Order Status",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
+      },
+      {
+        "id": 3,
+        "title": "Customer Order",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
+      },
+      {
+        "id": 4,
+        "title": "Manager Accesses Basic Sales Reports",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 5,
     "reviewer": "",
     "threatTop": 25
   }
