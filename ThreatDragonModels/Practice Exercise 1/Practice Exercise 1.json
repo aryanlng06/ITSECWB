@@ -1108,7 +1108,7 @@
               "threats": [
                 {
                   "id": "3ea3b3d3-d499-457b-9293-c426e58c2d67",
-                  "title": "T-003 Web Server Spoofing",
+                  "title": "T-003 Web Application Server Spoofing",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
@@ -1185,6 +1185,13 @@
                   "score": ""
                 }
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1494,7 +1501,22 @@
                 "x": 500,
                 "y": 410
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       },
