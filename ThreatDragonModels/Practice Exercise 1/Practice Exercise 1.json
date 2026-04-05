@@ -1649,6 +1649,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1732,7 +1733,6 @@
               ]
             },
             "id": "e83ae449-07ff-4c61-92b9-b56dfb22fcb2",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web App\nServer",
@@ -1799,6 +1799,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1882,7 +1883,6 @@
               ]
             },
             "id": "a8e72c33-f939-422a-bd0b-60f608e09dbe",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1920,6 +1920,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2003,7 +2004,6 @@
               ]
             },
             "id": "60540ea1-8f64-4be6-b39a-7aec6331cfb3",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Third-Party\nPayment Gateway",
@@ -2339,67 +2339,7 @@
                 "x": 450,
                 "y": 190
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -2409,7 +2349,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Payment gateway\nis partially trusted; \noutput still must\nbe validated",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -2417,17 +2357,27 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              "Payment gateway\nis partially trusted; \noutput still must\nbe validated"
             ],
             "id": "eae9280e-1fcb-4d3d-bac1-3aaf2489ebb0",
             "source": {
-              "x": 710,
-              "y": 330
+              "x": 810,
+              "y": 200
             },
             "target": {
               "x": 810,
               "y": 430
-            }
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 220
+              },
+              {
+                "x": 720,
+                "y": 350
+              }
+            ]
           }
         ]
       },
