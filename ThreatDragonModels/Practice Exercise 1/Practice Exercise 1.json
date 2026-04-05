@@ -1511,8 +1511,8 @@
                 "text": "Customer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1609,15 +1609,29 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "2986a5d0-a5e7-4071-ba3d-03bc7515596f",
+                  "title": " T-001 (Customer Account Spoofing)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate customer to place fraudulent orders or access their order history.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                }
+              ]
             }
           },
           {
             "position": {
-              "x": 510,
-              "y": 140
+              "x": 500,
+              "y": 160
             },
             "size": {
               "width": 60,
@@ -1628,8 +1642,8 @@
                 "text": "Web App\nServer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1726,12 +1740,39 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "76ac513c-4f0d-44ad-b9fc-9863ca03e03d",
+                  "title": " T-003 Web Application Server Spoofing ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 42,
+                  "score": ""
+                },
+                {
+                  "id": "8301fbfc-3fa1-4cb6-8060-a55cd638475f",
+                  "title": " T-008 Fraudulent Order Repudiation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non-repudiation controls are in place.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 43,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1974,6 +2015,147 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "sends order details",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "edae557b-72d5-47be-983e-bf8def1c725e",
+                  "title": "T-004 Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.\n",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 35,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "sends order details"
+            ],
+            "id": "067c9e98-d80c-4950-ae37-c70c95b7d58f",
+            "source": {
+              "x": 280,
+              "y": 290
+            },
+            "target": {
+              "x": 380,
+              "y": 390
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "displays order confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "33c2ed6e-4f11-4321-9bc9-000180b73a7e",
+                  "title": "T-010 Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 38,
+                  "score": ""
+                },
+                {
+                  "id": "8d3f8855-adbd-4922-a1de-b719be641d0b",
+                  "title": "T-013 Sales Data  Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.\n",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 39,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "displays order confirmation"
+            ],
+            "id": "3731e4f5-2681-40d6-bca4-eef14115ba19",
+            "source": {
+              "x": 170,
+              "y": 110
+            },
+            "target": {
+              "x": 270,
+              "y": 210
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 160
+              }
+            ]
           }
         ]
       },
@@ -1989,6 +2171,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 34
+    "threatTop": 43
   }
 }
