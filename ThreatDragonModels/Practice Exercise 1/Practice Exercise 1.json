@@ -1269,7 +1269,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Update order record \nwith new status \n& timestamp",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1283,12 +1283,12 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Update order record \nwith new status \n& timestamp"
             ],
             "id": "f17e61d6-0ca5-4f5b-96c6-0ff0d9f9387b",
             "source": {
-              "x": 640,
-              "y": 160
+              "cell": "b6faba2c-43ec-4604-94e0-8aba0e2897e7",
+              "port": "091dc2a7-e8a0-4583-8798-880803eedb4c"
             },
             "target": {
               "cell": "0bccd3e4-627c-46fb-b108-3a246e664489",
@@ -1296,8 +1296,60 @@
             },
             "vertices": [
               {
-                "x": 790,
-                "y": 210
+                "x": 740,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Response/confirmation \nof action",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Response/confirmation \nof action"
+            ],
+            "id": "57b29962-af5a-4adf-b0b5-f0a7a1ca0cb2",
+            "source": {
+              "cell": "b6faba2c-43ec-4604-94e0-8aba0e2897e7",
+              "port": "836cee2d-81b4-4242-91e2-69739f21e93e"
+            },
+            "target": {
+              "cell": "d819708a-45c9-4263-8466-1163d431aa3a",
+              "port": "fa626d31-616a-4009-bd98-c04db32103cb"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 150
               }
             ]
           }
