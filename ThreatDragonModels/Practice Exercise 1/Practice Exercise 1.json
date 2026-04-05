@@ -731,8 +731,8 @@
                 "text": "Barista"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -829,9 +829,30 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "aca04652-cf09-4642-8f27-bf663baae4b7",
+                  "title": "T-002 Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, access sales reports, or modify menu items and application configurations.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1410,6 +1431,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 26
+    "threatTop": 27
   }
 }
