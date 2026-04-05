@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "e0ec6eaf-2c98-4bd9-80e0-bf89a33c3bf4",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web App",
@@ -273,13 +273,53 @@
             ],
             "id": "54e36a28-2557-4454-b146-004bd126adce",
             "source": {
-              "x": 660,
-              "y": 200
+              "cell": "e0ec6eaf-2c98-4bd9-80e0-bf89a33c3bf4",
+              "port": "9c57d1ab-68f2-4862-a5aa-e0e8203b69b1"
             },
             "target": {
-              "x": 760,
-              "y": 300
-            }
+              "cell": "626c3f42-2174-4bcb-b681-2f76f61c13b6",
+              "port": "70912245-7746-4ede-8f20-7756899a1d85"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "External Output must be validated",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "External Output must be validated"
+            ],
+            "id": "b07882fe-f24a-4856-8f23-2cc892116c68",
+            "source": {
+              "x": 480,
+              "y": 30
+            },
+            "target": {
+              "x": 560,
+              "y": 410
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 240
+              }
+            ]
           },
           {
             "position": {
@@ -302,6 +342,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -385,7 +426,6 @@
               ]
             },
             "id": "da490103-95a6-46d3-aaa7-5dc013e918f3",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -400,8 +440,8 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 350
+              "x": 640,
+              "y": 340
             },
             "size": {
               "width": 120,
@@ -422,6 +462,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -505,7 +546,6 @@
               ]
             },
             "id": "626c3f42-2174-4bcb-b681-2f76f61c13b6",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
