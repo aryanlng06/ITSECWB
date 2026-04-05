@@ -28,7 +28,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web App"
+                "text": "Web App\nServer"
               },
               "body": {
                 "stroke": "red",
@@ -124,7 +124,7 @@
             "id": "e0ec6eaf-2c98-4bd9-80e0-bf89a33c3bf4",
             "data": {
               "type": "tm.Process",
-              "name": "Web App",
+              "name": "Web App\nServer",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -240,15 +240,6 @@
                   "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
