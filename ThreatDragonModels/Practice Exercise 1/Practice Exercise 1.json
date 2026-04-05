@@ -163,15 +163,80 @@
                 },
                 {
                   "id": "f11c5d5a-597a-455c-9b99-429a1ce3a8c3",
-                  "title": "New generic threat",
+                  "title": "T-005 Menu Data Tampering",
                   "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions) before it is stored in the database.",
+                  "mitigation": "",
                   "modelType": "default",
-                  "new": true,
+                  "new": false,
                   "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "2c8ec53d-6574-4ddf-808e-648d3f289313",
+                  "title": "T-006 Sales Report Tampering",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "66653339-a16c-432a-ba98-18e489977d08",
+                  "title": "T-007 Application  Code/Configuration Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Malicious modification of the \napplication’s source code, server\nconfigurations, or environment \nvariables could introduce backdoors \nor disable security features.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                },
+                {
+                  "id": "e3d539e4-390d-423e-8b4d-00b88d927713",
+                  "title": "T-014 Web Application Server DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the Web \nApplication Server with excessive\nrequests, making it unavailable.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "5eb9c529-63a3-47c3-96b4-b3e93b837461",
+                  "title": "T-016 Barista/Manager to  Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a \nvulnerability to gain Administrator\nprivileges.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                },
+                {
+                  "id": "43bbae76-906b-4c03-845d-d7994e52dea3",
+                  "title": "T-018 Horizontal Privilege  Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Gaining unauthorized access to \nanother user’s account within the \nsame\nprivilege level. ",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 25,
                   "score": ""
                 }
               ]
@@ -645,6 +710,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 20
+    "threatTop": 25
   }
 }
