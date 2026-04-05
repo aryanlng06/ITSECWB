@@ -31,8 +31,8 @@
                 "text": "Web App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -129,12 +129,59 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "66f1c6fa-e527-447a-8940-7f76f65e561e",
+                  "title": "T-002 Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff \nto manipulate order statuses,\naccess sales reports, or modify menu \nitems and application\nconfigurations.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "e3549025-949c-4c02-934b-d5e9f3210315",
+                  "title": "T-003 Web Application Server  Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "f11c5d5a-597a-455c-9b99-429a1ce3a8c3",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": true,
+                  "number": 20,
+                  "score": ""
+                }
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -440,7 +487,7 @@
                   "id": "50025ded-9f69-448c-8f8d-9bacc41c7beb",
                   "title": "T-009 Staff Action  Repudiation",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Low",
                   "type": "Repudiation",
                   "description": " Staff members (Barista, Manager, \nAdministrator) could deny performing\nactions if audit logs are insufficient, not \nimmutable, or can be tampered\nwith.",
                   "mitigation": "",
@@ -450,13 +497,6 @@
                   "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -473,11 +513,13 @@
                 "text": "MongoDB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -574,13 +616,27 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "cfd1a093-0cc9-4638-aa5c-831fa75bbccb",
+                  "title": "T-015 MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -589,6 +645,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 16
+    "threatTop": 20
   }
 }
