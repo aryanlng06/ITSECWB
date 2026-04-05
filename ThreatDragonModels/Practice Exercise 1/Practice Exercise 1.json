@@ -2391,8 +2391,8 @@
         "cells": [
           {
             "position": {
-              "x": 210,
-              "y": 250
+              "x": 250,
+              "y": 210
             },
             "size": {
               "width": 112.5,
@@ -2687,7 +2687,7 @@
           },
           {
             "position": {
-              "x": 670,
+              "x": 680,
               "y": 90
             },
             "size": {
@@ -2856,13 +2856,80 @@
                   "score": ""
                 }
               ]
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login credentials \nand sales report request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ff5c2d37-11e7-49a7-8a48-05a99000147d",
+                  "title": "T-011 Staff Credential  Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 52,
+                  "score": ""
+                },
+                {
+                  "id": "aff1f7cc-4a83-4995-8fc4-04528a6f5de0",
+                  "title": "T-012 Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of source code, server configurations, environment variables, or API keys.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 53,
+                  "score": ""
+                }
               ],
-              "name": null
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login credentials \nand sales report request"
+            ],
+            "id": "d818863a-a3df-44a7-ab89-9031a4994471",
+            "source": {
+              "x": 490,
+              "y": 160
+            },
+            "target": {
+              "x": 590,
+              "y": 260
             }
           }
         ]
@@ -2870,6 +2937,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 51
+    "threatTop": 53
   }
 }
