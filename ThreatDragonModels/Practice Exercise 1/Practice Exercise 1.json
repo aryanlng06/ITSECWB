@@ -2520,11 +2520,13 @@
                 "text": "MongoDB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2621,13 +2623,66 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "2aa10d74-87b8-4b8a-ad89-4f89e1af387d",
+                  "title": " T-006 Sales Report  Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 44,
+                  "score": ""
+                },
+                {
+                  "id": "5e3a15dd-fe58-4fa7-9234-acb855488c96",
+                  "title": " T-009 Staff Action  Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members (Barista, Manager, Administrator) could deny performing actions if audit logs are insufficient, not \nimmutable, or can be tampered with.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 45,
+                  "score": ""
+                },
+                {
+                  "id": "aae17f96-6f7b-40a0-ad95-18774c7ccc1d",
+                  "title": " T-013 Sales Data  Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 46,
+                  "score": ""
+                },
+                {
+                  "id": "1579f727-0dec-447c-882a-62809f28dade",
+                  "title": " T-015 MongoDB  Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 47,
+                  "score": ""
+                }
+              ]
             },
             "tools": {
               "items": [
@@ -2762,6 +2817,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 43
+    "threatTop": 47
   }
 }
