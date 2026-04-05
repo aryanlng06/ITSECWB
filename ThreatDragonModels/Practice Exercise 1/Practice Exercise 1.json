@@ -2982,6 +2982,58 @@
             "target": {
               "cell": "f4dc8bdd-f96c-4a98-a40e-0b4fdef03939",
               "port": "03559ddf-4653-4686-aa68-ba74f9c5cc8a"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query for sales totals \nand date range data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Query for sales totals \nand date range data"
+            ],
+            "id": "11dbff0f-443f-4ced-b1df-79292b96942b",
+            "source": {
+              "x": 710,
+              "y": 150
+            },
+            "target": {
+              "cell": "f6792b3b-b39a-44fb-9927-a9516de9db50",
+              "port": "20d8e201-0e4a-4a44-9428-e661c5feceba"
             }
           }
         ]
